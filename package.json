@@ -1,0 +1,22 @@
+{
+  "name": "rapidpro-js",
+  "version": "0.0.1-alpha.1",
+  "description": "A Node JS wrapper around RapidPro API v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onaio/rapidpro-js.git"
+  },
+  "keywords": [
+    "rapidpro"
+  ],
+  "author": "onaio",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/onaio/rapidpro-js/issues"
+  },
+  "homepage": "https://github.com/onaio/rapidpro-js#readme"
+}
