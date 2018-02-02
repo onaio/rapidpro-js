@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/onaio/rapidpro-js/issues"
   },
-  "homepage": "https://github.com/onaio/rapidpro-js#readme"
+  "homepage": "https://github.com/onaio/rapidpro-js#readme",
+  "dependencies": {
+    "superagent": "^3.8.2"
+  }
 }
