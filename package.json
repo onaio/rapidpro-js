@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/onaio/rapidpro-js#readme",
   "dependencies": {
+    "loadash": "^1.0.0",
     "superagent": "^3.8.2"
   },
   "devDependencies": {
