@@ -1,12 +1,9 @@
 const req = require('../lib/request.js');
-const rapidpro = require('./base.js');
+const mock = require('./mock.js');
 
-rapidpro
+mock
   .get('/')
-  .reply(200, {text: 'Hello'});
-
-
-rapidpro
+  .reply(200, {text: 'Hello'})
   .post('/', {f: {g: 'a'}})
   .reply(201, {name: 'John Doe', fields: {age: 23}});
 

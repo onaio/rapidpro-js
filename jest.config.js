@@ -1,3 +1,3 @@
 module.exports = {
-  testPathIgnorePatterns: ['base.js']
+  testPathIgnorePatterns: ['mock.js']
 };

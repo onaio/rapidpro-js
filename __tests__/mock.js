@@ -1,13 +1,14 @@
 var nock = require('nock');
+const {rapidProBaseURL} = require('../lib/urls.js');
 
-const rapidProBaseURL = 'https://rapidpro.ona.io/api/v2/';
-
-const rapidpro = nock(rapidProBaseURL, {
+const mock = nock(rapidProBaseURL, {
   reqheaders: {
     // TODO: Correctly check auth header. This one always passes.
     'Authorization': /Token \w+/i,
     'Accept': 'application/json'
-  }
-});
+  }})
+      .persist();
 
-module.exports = rapidpro;
+
+
+module.exports = mock;
