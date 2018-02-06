@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- 9.5.0
+install:
+- yarn --dev
+script:
+- yarn lint
+- yarn test
+- yarn docs
+- cat docs/_css/custom.css >> out/styles/jsdoc-default.css
+env:
+  global:
+  - GH_REF: github.com/goodbotai/borq.git
+  - secure: WplWejTLfDkcJxlwSf6LndZpT6+cFY6q5ix/7DDvPvIIq3r59hIoUsNZeisQtn2Tv2O81urceqiT3EeHF3+zcj6HkQudBOSiR5naiYFYgsGlkhr3FdClMTlcO1ym6adjDVcohdSpnCMXzYLNgIh2UwArSwxrDlBQwF1VAgLElY5iE79GPjgaIEFwdVhq11vuf0dZ+PnYazlc69j2/IVcPB2iHKcu4noc8oP7JoyTopdP828qig7jtAeBlzTZwgYZ4FkK8OcefoyGQCnT5KMhHUQNAeJxAWofZHKowlYPG4gmziCzQpNVXvg7nK6oR3RaSXgvXqxwwLTI9mlYZ25xWRBOVeZpn+nm9v0FYreTQiHYKYK6iaKfe6YaPt3ycliWbbgVE98MKxCoOF+72kPTAybpGd/raYDUcKzDyeUeSAiFGG9TZizvK3MeuvfPhzHVvqLWJmbHGe3PWYm4IhcszFILF0PRcJpvZgjg6Lo/SMmwmHMz50oVKQ1+OJKqsf+0aVUJ1HvkB+SYPj2ER7IzZ9DMoGeMvP9oQtXnpilH2m/j+DD7FyiyeYdJLN2s9VobWEVg7WAARATRaSgi08qwfCCNTmbI+419at+iKfa0I7F1zyLKFG4KNKkdgX0dzgHrFZr8TEcYiHrnwX/yHbR/yJDDYTmTUR3+XJmsFe3ja/g=
+deploy:
+  skip_cleanup: true
+  provider: pages
+  local_dir: out
+  github_token: "$GH_TOKEN"
+  on:
+    tags: true
