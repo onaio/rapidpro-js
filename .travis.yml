@@ -6,6 +6,7 @@ install:
 script:
 - yarn lint
 - yarn test
+- yarn test --coverage
 - yarn docs
 - cat docs/_css/custom.css >> out/styles/jsdoc-default.css
 env:
