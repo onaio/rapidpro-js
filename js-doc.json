@@ -1,0 +1,16 @@
+{
+  "plugins": ["plugins/markdown"],
+  "recurseDepth": 10,
+  "source": {
+    "include": ["./lib"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "readme": "README.md",
+    "template": "./node_modules/minami",
+    "encoding": "utf8",
+    "destination": "./out",
+    "recurse": true
+  }
+}
