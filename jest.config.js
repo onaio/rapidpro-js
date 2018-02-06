@@ -1,3 +1,4 @@
 module.exports = {
-  testPathIgnorePatterns: ['mock.js']
+  globals: {NODE_ENV: 'test'},
+  testPathIgnorePatterns: ['mock.js'],
 };
