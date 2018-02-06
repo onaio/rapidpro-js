@@ -1,6 +1,6 @@
 {
   "name": "rapidpro-js",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "A Node JS wrapper around RapidPro API v2",
   "main": "index.js",
   "scripts": {
