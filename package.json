@@ -24,6 +24,7 @@
     "superagent": "^3.8.2"
   },
   "devDependencies": {
+    "eslint": "^4.17.0",
     "jest": "^22.1.4",
     "nock": "^9.1.6"
   }
