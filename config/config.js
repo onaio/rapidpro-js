@@ -7,5 +7,7 @@ const env = process.env;
  * @type {object}
  */
 module.exports = {
-  rapidproApiToken: env.RAPIDPRO_API_TOKEN ? env.RAPIDPRO_API_TOKEN : console.log('Set the RAPIDPRO_API_TOKEN'),
+  rapidproApiToken: env.RAPIDPRO_API_TOKEN
+    ? env.RAPIDPRO_API_TOKEN
+    : console.log('Set the RAPIDPRO_API_TOKEN env var'),
 };
