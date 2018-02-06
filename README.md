@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/rapidpro-js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rapidpro-js/)
+
 [![Build Status](https://travis-ci.org/onaio/rapidpro-js.svg?branch=master)](https://travis-ci.org/onaio/rapidpro-js)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://github.com/goodbotai/borq/blob/master/LICENSE)
 
