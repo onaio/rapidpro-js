@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const {
   getContact,
   createContact,
@@ -5,7 +6,6 @@ const {
   updateContact,
 } = require('../lib/contacts.js');
 const mock = require('./mock.js');
-const _ = require('lodash');
 
 const contactsEndPoint = '/contacts.json';
 const invalidContactUUID = '1d0n73x157';
@@ -69,7 +69,6 @@ mock
     );
   })
   .reply(200, exampleNoContact);
-
 
 // Update
 mock
@@ -195,14 +194,16 @@ describe('Update Contacts', () => {
   });
   describe('URN query string', () => {
     it('Updates a contact based on the URN', () => {
-      updateContact({urn: validTelURN}, {fields: {gender: 'Male'}})
-        .then(res => expect(res.body).toEqual(updatedContact));
+      updateContact({urn: validTelURN}, {fields: {gender: 'Male'}}).then(
+        (res) => expect(res.body).toEqual(updatedContact)
+      );
     });
     // in reality the contact would have more fields but this is
     // good enough fr testing
     it('creates a new contact if there is no contact with that URN', () => {
-      updateContact({urn: invalidTelURN}, newContact)
-        .then(res => expect(res.body).toEqual(newContact));
+      updateContact({urn: invalidTelURN}, newContact).then((res) =>
+        expect(res.body).toEqual(newContact)
+      );
     });
   });
 });
